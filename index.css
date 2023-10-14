@@ -9,6 +9,7 @@
 
 :root {
     --main-color: rgb(255,200,0);
+    --main-color-trans: rgba(255,200,0,0.7);
     --main-color-bg: rgb(128,100,0);
     --main-color-bg-trans: rgba(128,100,0,0.7);
 }
@@ -33,7 +34,7 @@ body {
     z-index: -99;
 }
 ::selection {
-    background-color: var(--main-color-bg-trans);
+    background-color: var(--main-color-trans);
 }
 
 #topnav {
