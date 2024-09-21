@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fnt/Roboto.ttf");
+}
+@font-face {
+    font-family: "DS-Digital";
+    src: url("fnt/DS-Digital.ttf");
+}
+
+:root {
+    --main-color: rgb(255,200,0);
+    --main-color-trans: rgba(255,200,0,0.7);
+    --main-color-bg: rgb(128,100,0);
+    --main-color-bg-trans: rgba(128,100,0,0.7);
+
+    --secondary-color: rgb(128,0,255);
+    --secondary-color-trans: rgba(128,0,255,0.7);
+    --secondary-color-bg: rgb(64,0,128);
+    --secondary-color-bg-trans: rgba(64,0,128,0.7);
+}
+
+* {
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+}
+::selection, ::-moz-selection {
+    background-color: var(--main-color-trans);
+    color: var(--secondary-color-trans);
+}
+.linebreak {
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    border-top: 1px;
+    border-top-style: solid;
+    display: table;
+    width: 100%;
+}
+
+.sociallink {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    transition: width 0.1s, height 0.1s;
+    padding: 20px;
+}
+.sociallink:hover {
+    width: 60px;
+    height: 60px;
+    transition: width 0.1s, height 0.1s;
+}
+.sociallinkcontainer {
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+#error {
+    font-family: "DS-Digital";
+    font-size: 100px;
+    letter-spacing: 10vw;
+    text-indent: 10vw;
+}
+#wlcm {
+    text-align: center;
+    color: #fff;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 80px;
+}
+#ctbm {
+    text-align: center;
+    color: var(--main-color);
+    font-family: Roboto;
+    font-weight: 1000;
+    font-size: 70px;
+    text-shadow: 0 0 30px var(--main-color);
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+}
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: Roboto;
+    font-weight: 1000;
+    font-size: 80px;
+
+    text-shadow: 5px 5px 0 var(--secondary-color-bg);
+}
+button {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    width: 20ex;
+    height: 2em;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    background: var(--secondary-color-trans);
+
+    transition: font-size 0.1s, height 0.1s;
+}
+button:hover {
+    height: 2.1em;
+    font-size: 25px;
+
+    transition: font-size 0.1s, height 0.1s;
+}
+button:active {
+    background: rgba(168,40,255,0.7);
+
+    transition: font-size 0.1s, height 0.1s;
+}

@@ -1,0 +1,35 @@
+#naviframe {
+    font-size: 20px;
+    background: var(--main-color);
+    height: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0;
+    z-index: 9999;
+}
+#topnav a {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px 1em;
+    font-size: 30px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    transition: font-size 0.1s;
+    float: right;
+}
+#topnav a:hover {
+    font-size: 32px;
+    transition: font-size 0.1s;
+}
+#topnavshadow {
+    position: absolute;
+    top: -0.6%;
+    left: -2.5%;
+    height: 3em;
+    width: 105%;
+    box-shadow: 0 10px 30px var(--main-color);
+    pointer-events: none;
+    position: fixed;
+}
