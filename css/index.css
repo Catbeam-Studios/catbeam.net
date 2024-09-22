@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Roboto";
-    src: url("fonts/Roboto.ttf");
+    src: url("/fonts/Roboto.ttf");
 }
 @font-face {
     font-family: "DS-Digital";
-    src: url("fonts/DS-Digital.ttf");
+    src: url("/fonts/DS-Digital.ttf");
 }
 @font-face {
     font-family: "DIN";
-    src: url("fonts/DIN Bold.ttf");
+    src: url("/fonts/DINBold.ttf");
 }
 
 :root {
