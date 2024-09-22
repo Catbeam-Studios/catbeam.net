@@ -1,10 +1,14 @@
 @font-face {
     font-family: "Roboto";
-    src: url("fnt/Roboto.ttf");
+    src: url("fonts/Roboto.ttf");
 }
 @font-face {
     font-family: "DS-Digital";
-    src: url("fnt/DS-Digital.ttf");
+    src: url("fonts/DS-Digital.ttf");
+}
+@font-face {
+    font-family: "DIN";
+    src: url("fonts/DIN Bold.ttf");
 }
 
 :root {
@@ -80,7 +84,7 @@ body {
 #wlcm {
     text-align: center;
     color: #fff;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 1000;
     font-size: 80px;
@@ -88,7 +92,7 @@ body {
 #ctbm {
     text-align: center;
     color: var(--main-color);
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 1000;
     font-size: 70px;
     text-shadow: 0 0 30px var(--main-color);
@@ -97,14 +101,14 @@ body {
 p {
     text-align: center;
     color: #fff;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 500;
     font-size: 40px;
 }
 h1 {
     text-align: center;
     color: var(--secondary-color);
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 1000;
     font-size: 80px;
 
@@ -113,7 +117,7 @@ h1 {
 button {
     text-align: center;
     color: white;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 500;
     font-size: 20px;
     border: 0;
